@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content" class="body">
+{% block content_title %}
+<address class="vcard author">By {{ AUTHOR }}</address>
+{% endblock %}
+
+{{ page.content }}
+
+<h2>All articles</h2>
+
+<ol id="post-list">
+{% for article in articles | sort(attribute='source_path') %}
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+                <footer class="post-info published">{{ article.metadata.published }}</footer><!-- /.post-info -->
+                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+        </article></li>
+{% endfor %}
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+{% endblock content %}

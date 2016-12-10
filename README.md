@@ -2,6 +2,7 @@
 
 A DIY ergonomic mechanical computer keyboard.
 
+
 ## License
 
 [![Creative Commons License][badge]][cc-by-sa4]
@@ -16,3 +17,11 @@ The TMK Keyboard Firmware is licensed under GPL version 2 or later. Some
 of its protocol files are under Modified BSD License.
 
 Third party libraries used in the firmware have their own licenses.
+
+
+## Documentation
+
+For design documentation and build instructions, see the
+[project site][site].
+
+[site]: https://yurikhan.github.io/purple-tentacle/

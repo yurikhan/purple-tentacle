@@ -1,0 +1,89 @@
+@import url("pygments.css");
+
+@media screen and (min-width: 9in) {
+  html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
+}
+
+@media screen {
+
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 8.5in;
+  height: 100%;
+  margin-left: -1in;
+  background: white;
+  z-index: -1;
+  box-shadow: 0 0 1em black;
+}
+
+body {
+  background: #555753;
+  color: black;
+  max-width: calc(8.5in - 1in * 2);
+  margin-left: auto; margin-right: auto;
+  padding: 1in 0.125in;
+  z-index: -10;
+}
+  
+body::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 1in;
+  background: #555753;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  height: 100%;
+  width: 8.5in;
+  margin-left: calc(-1in - 1em);
+  box-shadow: inset 0 1.5em 0.75em -1.5em black;
+}
+
+}
+
+.body { font-size: 12pt; line-height: 1.5; }
+code { font-size: 10pt; }
+
+pre { max-width: 100%; overflow-x: auto; border: 1px solid #ecf0eb; font-size: 10pt; }
+
+blockquote { margin-left: 0; border-left: 1px solid #d3d7cf; padding-left: 1.5em; }
+
+body p, table { margin-top: 1.5em; margin-bottom: 1.5em; }
+h1 { font-weight: normal; font-size: 2em; }
+h2 { font-weight: normal; font-size: 1.618em; }
+h3 { font-weight: normal; font-size: 1.382em; }
+h3 { margin-top: 2em; margin-bottom: 1em; }
+
+.hentry h2 { font-size: 1.382em; }
+footer.post-info { font-size: 0.786em; }
+footer.post-info p, .hentry .entry-content p { margin-top: 1em; margin-bottom: 1em; }
+
+a:link { text-decoration: none; border-bottom-width: 1px; border-bottom-style: solid; }
+a:link { color: rgb(52,101,164); border-bottom-color: rgba(52,101,164, 0.25) }
+a:visited { color: rgb(117,80,123); border-bottom-color: rgba(117,80,123, 0.25) }
+
+ul { margin-left: 0in; padding-left: 0.5in }
+ul ul { padding-left: 0.25in }
+ul>li { margin-left: 0in; padding-left: 0in; list-style-type: disc }
+
+table { border-collapse: collapse; margin: 0 auto; }
+caption { font-weight: normal; font-size: 1.382em; margin-bottom: 0.5em }
+thead { border-bottom: 1px solid #ecf0eb; }
+th { text-align: left; }
+th, td { vertical-align: baseline; }
+*+th, *+td { padding-left: 0.5em; }
+tr+tr th, tr+tr td { padding-top: 0.5em; }
+
+hr { border: none; height: 1px; background: black; width: 100% !important; margin-left: auto; margin-right: auto }
+
+img { max-width: 100%; }
+
+*::-moz-selection { background-color: Highlight; color: HighlightText; }
+
+sup[id^='fnref:']+sup[id^='fnref:']::before { content: ',' }
