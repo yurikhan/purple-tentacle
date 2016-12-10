@@ -1,7 +1,3 @@
-# Purple Tentacle Keyboard
-
-A DIY ergonomic mechanical computer keyboard.
-
 ## License
 
 [![Creative Commons License][badge]][cc-by-sa4]
