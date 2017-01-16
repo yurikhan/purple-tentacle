@@ -1,59 +1,90 @@
 Title: Layout
 Date: 2016-12-10T14:00Z
-Summary: Function keys, navigation, thumb clusters, extra keys, fixed split, column stagger.
+Summary: Column-staggered, fixed split tenkeyless layout with thumb arcs.
 
-Here is the overall layout of Purple Tentacle, with various key groups
-highlighted.
+Here is the physical layout of Purple Tentacle,
+with various key groups highlighted.
+The default keymap is shown;
+you will be able to customize it.
 
-![]({filename}/images/02-layout/layout.png)
+[![]({filename}images/02-layout/layout.png)][source]
 
-On the top edge, you have the classic row of function keys, in groups
-of four.
+[source]: http://www.keyboard-layout-editor.com/#/gists/0eb51054919d0ed51396cbd71c97c7d0
 
-The main area is split into two halves, with a fixed 26° angle between
-them. (This provides the ergonomic advantages of a split keyboard
-while keeping the case design easy and without having to invent a way
-to interconnect the halves.)
+(Forking note:
+the Corresponding Source for this image
+is available [online][source].)
 
-The layout features navigation keys, arranged in diamond shapes and
-positioned in the index–middle–ring finger columns. They are easily
-accessible without moving the wrist.
+The main area is split into two halves,
+with a fixed 26° angle between them.
+(This provides the ergonomic advantages
+of a split keyboard
+while keeping the case design simple.)
 
-Each half has three thumb keys and one key for the base of the thumb.
-The <kbd>Shift</kbd>, <kbd>Ctrl</kbd> and <kbd>Alt</kbd> arrangement
-makes it possible to press two modifiers simultaneously with one thumb
-while leaving the other fingers in their home position.
+Keys in the main area are arranged in straight columns,
+which are staggered in accordance with finger lengths.
 
-The additional column of keys in the middle, pressed by the index
-fingers, accommodates the most frequently used editing keys:
-<kbd>Backspace</kbd>, <kbd>Enter</kbd>, <kbd>Tab</kbd>,
-<kbd>Delete</kbd>, and more rare but still occasionally useful
-<kbd>Insert</kbd> and <kbd>Menu</kbd> keys.
+There are eight columns in each half;
+the home position spans four columns in the middle.
+Two additional outside columns are provided for the pinky,
+and two inside columns for the index finger.
+(This is in contrast
+to the conventional non-split layout,
+which has only two inside columns,
+one outside column on the left
+and three to four outside columns on the right,
+overworking the right pinky.)
 
-Holding down the left Space (<kbd>Fn</kbd>) key turns the right half
-into a keypad. Note that the home row corresponds to digits 4, 5, and
-6, the same as on a real keypad. Pressing <kbd>Fn</kbd>+<kbd>Keypad
-Lock</kbd> locks this mode, for the rare case when you need to enter a
-bunch of numbers without needing any letters.
+The default keymap
+moves the most frequently used editing keys —
+<kbd>Backspace</kbd>,
+<kbd>Enter</kbd>,
+<kbd>Tab</kbd>,
+and <kbd>Delete</kbd>
+(highlighted in yellow) — to the inside columns,
+and duplicates one punctuation key
+(US <kbd>\|</kbd>, or UK <kbd>#~</kbd>)
+on the left hand.
 
-Lastly, there are several spare keys for experimentation. Use these
-for anything you can think of. Ideas include:
+This leaves several spare keys for user experimentation
+(highlighted in red).
+The default keymap assigns them
+in a way that tries to accommodate most national layouts
+out of the box.
+However, if you create a keymap
+that is substantially better
+for a particular language,
+please [send a pull request][pull]!
 
-* Any classic keys you need (<kbd>Print Screen</kbd>, <kbd>Scroll
-  Lock</kbd>, <kbd>Caps Lock</kbd>, or <kbd>Win</kbd>)
-* <kbd>Undo</kbd>, <kbd>Cut</kbd>, <kbd>Copy</kbd> and
-  <kbd>Paste</kbd> down the leftmost column
-* The ISO backslash key
-* Additional input method-specific keys for East Asian languages
-* Macros
+[pull]: https://github.com/yurikhan/purple-tentacle/pulls
 
-Actually, thanks to the TMK Keyboard Firmware, all keys are
-customizable. All of the above is only a recommendation.
+Apart for the main area,
+the layout includes:
 
-The triangular shape in the middle, highlighted in purple, with the
-green status LEDs, resembles a character from Day of the Tentacle, a
-1993 video game. This is what the keyboard is named after.
-(@Lucasfilm: If you feel this infringes your trademark, please
-[file an issue][issues].)
+* Function keys on the top,
+  in groups of four
+  (highlighted in purple).
+  This grouping aids in finding them by touch.
+* Two diamond-shape navigation clusters,
+  positioned in the index–middle–ring finger columns
+  and accessible without moving the wrist
+  (highlighted in blue).
+* Three keys for each thumb
+  and two keys to be pressed with the base of the thumbs
+  (highlighted in green).
+  Arranging modifiers as shown above
+  makes it possible to press two modifiers
+  simultaneously with one thumb
+  while leaving the other fingers in their home position.
+
+The triangular shape in the middle,
+highlighted in purple,
+with the green status LEDs,
+resembles a character from Day of the Tentacle,
+a 1993 video game.
+This is what the keyboard is named after.
+(@Lucasfilm:
+If you feel this infringes your trademark,
+please [file an issue][issues].)
 
 [issues]: https://github.com/yurikhan/purple-tentacle/issues
