@@ -155,7 +155,7 @@ according to your location.</p>
 <td align="right">7</td>
 <td></td>
 <td></td>
-<td></td>
+<td><sup id="fnref:13"><a class="footnote-ref" href="#fn:13" rel="footnote">13</a></sup></td>
 <td align="right">$1</td>
 </tr>
 <tr>
@@ -179,7 +179,7 @@ according to your location.</p>
 <td align="right">4</td>
 <td></td>
 <td></td>
-<td><sup id="fnref:13"><a class="footnote-ref" href="#fn:13" rel="footnote">13</a></sup></td>
+<td><sup id="fnref:14"><a class="footnote-ref" href="#fn:14" rel="footnote">14</a></sup></td>
 <td align="right">$1</td>
 </tr>
 <tr>
@@ -202,9 +202,17 @@ according to your location.</p>
 <td>Self-adhesive rubber feet</td>
 <td align="right">4</td>
 <td></td>
-<td><sup id="fnref:14"><a class="footnote-ref" href="#fn:14" rel="footnote">14</a></sup></td>
-<td>$7</td>
+<td></td>
+<td><sup id="fnref:15"><a class="footnote-ref" href="#fn:15" rel="footnote">15</a></sup></td>
+<td align="right">$7</td>
+</tr>
+<tr>
+<td><strong>Subtotal</strong></td>
 <td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+<td align="right"><strong>≈$200</strong></td>
 </tr>
 </tbody>
 </table>
@@ -223,7 +231,7 @@ according to your location.</p>
 <p>If unsure, choose Quiet Click.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Matias keycaps are available in black or white, blank or
+<p>Matias keycaps are available in black or white; blank or
 labeled. They are made of ABS plastic, have matte cylindrical
 surface, and differ by row.</p>
 <p>When choosing, keep in mind the following considerations:</p>
@@ -240,14 +248,14 @@ surface, and differ by row.</p>
 <p><a href="http://pimpmykeyboard.com/">Signature Plastics</a> offers a limited selection of keycaps
 with Alps mounts; these are blank only, more expensive, and in
 various colors and profiles.</p>
-<p>This build instruction does not suggest a default choice for
-keycaps. You need to make that choice.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>There is no default for the keycaps; you have to make this choice.
+The approximate cost assumes a Matias keycap set.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
 <p>Purple Tentacle uses palm supports designed for the Matias Ergo
 Pro keyboard. These come in five colors: White, Black, Red, Navy
-Blue, and Astronaut Blue. They are gel pads covered with silk, on
-a plastic/steel base.</p>
+Blue, and Astronaut Blue. They are gel pads covered with silk,
+attached to a plastic/steel base.</p>
 <p>Whether to use palm supports is a personal choice, dependent on
 your typing habits.</p>
 <p>If you do use the palm supports, they will accumulate lint from
@@ -289,7 +297,7 @@ they will be a hassle to fit in the keyboard case.&#160;<a class="footnote-backr
 </li>
 <li id="fn:6">
 <p>For status indicators (Num Lock, Caps Lock, Scroll Lock), choose
-LEDs that will fit in 8 mm height and have forward voltage of 3 V or
+LEDs that will fit in 8 mm space and have forward voltage of 3 V or
 less. Prefer diffused ones. Choose through-hole mount, not surface
 mount.</p>
 <p>This instruction assumes ⌀3 mm green LEDs, forward voltage 1.8–2 V,
@@ -297,9 +305,12 @@ maximum current 20 mA.&#160;<a class="footnote-backref" href="#fnref:6" rev="fo
 </li>
 <li id="fn:7">
 <p>Calculate the minimum limiting resistor value as
-R<sub>min</sub> = (5 V − V<sub>f</sub>) / I<sub>max</sub> and use
-an actual value above that in order to keep the current through
-LEDs within specifications.</p>
+<var>R</var><sub>min</sub> = (<var>V</var><sub>cc</sub> −
+<var>V</var><sub>f</sub>) / <var>I</var><sub>max</sub>, where
+<var>V</var><sub>cc</sub> = 5 V, <var>V</var><sub>f</sub> is the
+LED forward voltage, and <var>I</var><sub>max</sub> is the LED
+maximum current, and use an actual value above that in order to
+keep the current through LEDs within specifications.</p>
 <p>For best results, try resistors of several values and choose the
 one that yields the most comfortable LED brightness. Your goal is
 to make the LED noticeable but not painful to look at. Be sure to
@@ -311,7 +322,9 @@ pleasant brightness.&#160;<a class="footnote-backref" href="#fnref:7" rev="footn
 <li id="fn:8">
 <p>Matias switches are mounted on a plate 1 mm thick. Ask your
 laser cutting facility what materials they carry.</p>
-<p>If in doubt, choose stainless steel.&#160;<a class="footnote-backref" href="#fnref:8" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+<p>If in doubt, choose stainless steel. (If you make a Purple
+Tentacle with a plate made of a different material, please
+<a href="https://github.com/yurikhan/purple-tentacle/issues/1">share your experience</a>!)&#160;<a class="footnote-backref" href="#fnref:8" rev="footnote" title="Jump back to footnote 8 in the text">&#8617;</a></p>
 </li>
 <li id="fn:9">
 <p>The bottom plate covers the electronics from below. If you
@@ -329,7 +342,9 @@ inserted into the mounting plate, their pin ends will go 8 mm
 below the plate level, and you will need a little space so that
 the bottom plate does not touch them.</p>
 <p>Ask your laser cutter facility what materials they carry and what
-they work with. Otherwise, the choice is purely aesthetical.</p>
+they work with. If they don’t have anything suitable, ask what
+size the raws need to be.</p>
+<p>The choice is purely aesthetical.</p>
 <p>With translucent plastics, electronics next to the edges will be
 visible through the case walls. Also, if your controller board has
 an always-on power LED, it will shine through the back.</p>
@@ -355,19 +370,35 @@ convenient for you. If not, choose solid core copper wire, around
 AWG 26 (0.13 mm<sup>2</sup>).</p>
 <p>Category 5 twisted pair can be used and provides convenient color
 coding for the wires, although it is a bit too rigid. If you go
-this way, you need 1.5 m 4-pair UTP 5 or 3 m 2-pair UTP 5.&#160;<a class="footnote-backref" href="#fnref:12" rev="footnote" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+this way, you need 1.5 m 4-pair UTP or 3 m 2-pair UTP.&#160;<a class="footnote-backref" href="#fnref:12" rev="footnote" title="Jump back to footnote 12 in the text">&#8617;</a></p>
 </li>
 <li id="fn:13">
-<p>M6 bolts, washers and nuts are used to attach palm supports. If
-you don’t want palm supports, skip these.&#160;<a class="footnote-backref" href="#fnref:13" rev="footnote" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+<p>M3 bolts, washers and acorn nuts screw the case details
+together. Choose a bolt length 2 to 4 mm longer than the total
+thickness of the bottom, spacer, plate, and frame (if used). Add
+washers if needed. (The M3 acorn nut has a depth of 4.5 mm.)</p>
+<p>Choose a head shape with a flat underside, not a countersunk one.&#160;<a class="footnote-backref" href="#fnref:13" rev="footnote" title="Jump back to footnote 13 in the text">&#8617;</a></p>
 </li>
 <li id="fn:14">
+<p>M6 bolts, washers and nuts are used to attach palm supports. If
+you don’t want palm supports, you can skip these.</p>
+<p>The palm supports provide an elevation of ≈8 mm to the front edge
+of the keyboard. This should accommodate most M6 bolt heads so
+they won’t scratch your desk.</p>
+<p>Choose a head shape with a flat underside, not a countersunk one.&#160;<a class="footnote-backref" href="#fnref:14" rev="footnote" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:15">
 <p>Rubber feet prevent the keyboard from moving on your desk.
 Additionally, they prevent the case bolt heads from scratching the
 desk surface.</p>
 <p>Choose feet thickness so that it exceeds the bolt head height.
 4 mm or higher should accommodate most standard shapes of M3 bolt
-heads.&#160;<a class="footnote-backref" href="#fnref:14" rev="footnote" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+heads.</p>
+<p>With palm supports, two rubber feet are sufficient. Without palm
+supports, you might want five.</p>
+<p>The best-known supplier is 3M. Suitable feet are sometimes bundled
+with network appliances such as switches, home routers, and WiFi
+access points.&#160;<a class="footnote-backref" href="#fnref:15" rev="footnote" title="Jump back to footnote 15 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
