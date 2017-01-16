@@ -2,7 +2,9 @@ Title: Introduction
 Date: 2016-12-10T09:33Z
 Summary: Purple Tentacle is a simple ergonomic desktop computer keyboard.
 
-[TODO: put a finished product photo here.]
+[![][photo]][photo]
+
+[photo]: {filename}/images/01-intro/complete.jpg
 
 In a nutshell, Purple Tentacle is a
 DIY
