@@ -132,7 +132,7 @@
        xlink:href="#DSA" />
   </defs>
   <path
-     style="fill:#fce0ff;fill-opacity:0.50196081;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="fill:#e0c0e4;fill-opacity:0.50196081;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 97.5,0 46,198.5 53.5,-12 c -12.11034,8.26408 -28.72884,14.40112 -51.5,20 l 25.5,109 C 116.49733,327.83867 71.36814,320.93038 26,315 L 50,206 0,192.5 c 16.05524,-3.00096 33.78215,-0.98688 52.5,4 z"
      id="path4318"
      inkscape:connector-curvature="0"
