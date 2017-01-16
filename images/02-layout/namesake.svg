@@ -37,7 +37,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="3840"
-     inkscape:window-height="2055"
+     inkscape:window-height="2021"
      id="namedview988"
      showgrid="false"
      fit-margin-top="0"
@@ -48,7 +48,7 @@
      inkscape:cx="-48.919922"
      inkscape:cy="249.6549"
      inkscape:window-x="0"
-     inkscape:window-y="68"
+     inkscape:window-y="102"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <style
@@ -132,7 +132,7 @@
        xlink:href="#DSA" />
   </defs>
   <path
-     style="fill:#ad7fa8;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="fill:#fce0ff;fill-opacity:0.50196081;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 97.5,0 46,198.5 53.5,-12 c -12.11034,8.26408 -28.72884,14.40112 -51.5,20 l 25.5,109 C 116.49733,327.83867 71.36814,320.93038 26,315 L 50,206 0,192.5 c 16.05524,-3.00096 33.78215,-0.98688 52.5,4 z"
      id="path4318"
      inkscape:connector-curvature="0"
