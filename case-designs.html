@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="utf-8" />
+        <title>Case designs – Purple Tentacle Keyboard</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
+
+
+
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="./">Purple Tentacle Keyboard <strong></strong></a></h1>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="./case-designs.html" rel="bookmark"
+         title="Permalink to Case designs">Case designs</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <div class="published">
+      
+    </div>
+    <address class="vcard author">
+      By           Yuri Khan
+    </address>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h2 id="overview">Overview</h2>
+<p>The case consists of four parts,
+bottom to top:</p>
+<div>
+<p><figure><a href="./images/04-case-designs/bottom.svg"><img alt="" src="./images/04-case-designs/bottom.svg" /></a>
+<figcaption><a href="./images/04-case-designs/bottom.svg">Bottom plate</a></figcaption></figure>
+<figure><a href="./images/04-case-designs/spacer.svg"><img alt="" src="./images/04-case-designs/spacer.svg" /></a>
+<figcaption><a href="./images/04-case-designs/spacer.svg">Spacer</a></figcaption></figure>
+<figure><a href="./images/04-case-designs/plate.svg"><img alt="" src="./images/04-case-designs/plate.svg" /></a>
+<figcaption><a href="./images/04-case-designs/plate.svg">Mounting plate</a></figcaption></figure>
+<figure><a href="./images/04-case-designs/frame.svg"><img alt="" src="./images/04-case-designs/frame.svg" /></a>
+<figcaption><a href="./images/04-case-designs/frame.svg">Top frame</a></figcaption></figure></p>
+</div>
+<p>Seven M3 bolts with nuts
+hold the parts together.</p>
+<p>Palm supports are attached to the bottom plate
+with M6 bolts and nuts.
+The nuts are held in place
+by the hexagonal cutouts in the spacer.</p>
+<p>DXF files suitable for laser cutting
+are available <a href="https://github.com/yurikhan/purple-tentacle/case/">from the project repository</a>.</p>
+<h2 id="source-files">Source files</h2>
+<p>The remainder of this page
+is only important
+if you want to modify the physical layout.</p>
+<p>This instruction assumes
+you have the following software installed:</p>
+<ul>
+<li>
+<p>LibreCAD</p>
+</li>
+<li>
+<p>Python 3</p>
+<ul>
+<li>Additional packages
+  listed in <a href="https://github.com/yurikhan/purple-tentacle/tools/requirements.txt"><code>requirements.txt</code></a>.
+  You should be able to install them with:<pre><code>$ pip3 install --user --requirement requirements.txt
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>GNU Make</p>
+</li>
+</ul>
+<p>The preferred source for the case design
+is the <code>master.dxf</code> file.
+It uses blocks to make the design more flexible
+and layers to separate case details.</p>
+<p>After you modify the master drawing,
+run <code>make all</code> in the <code>case</code> directory.
+This will update the individual part DXFs
+and images for this instruction.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<div class="toc">
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#source-files">Source files</a></li>
+<li><a href="#table-of-contents">Table of Contents</a><ul>
+<li><a href="#layers">Layers</a><ul>
+<li><a href="#0">0</a></li>
+<li><a href="#bottom-spacer-plate-and-frame">Bottom, Spacer, Plate, and Frame</a></li>
+<li><a href="#case-upper">Case upper</a></li>
+<li><a href="#case-lower">Case lower</a></li>
+<li><a href="#case">Case</a></li>
+<li><a href="#keycaps">Keycaps</a></li>
+<li><a href="#palm-supports">Palm supports</a></li>
+<li><a href="#construction">Construction: *</a></li>
+<li><a href="#labels">Labels</a></li>
+</ul>
+</li>
+<li><a href="#blocks">Blocks</a><ul>
+<li><a href="#keyswitch-cutout">Keyswitch cutout</a></li>
+<li><a href="#key">Key</a></li>
+<li><a href="#frame-key">Frame Key</a></li>
+<li><a href="#key-15">Key 1.5</a></li>
+<li><a href="#frame-key-15">Frame Key 1.5</a></li>
+<li><a href="#frame-fgroup">Frame Fgroup</a></li>
+<li><a href="#fgroup">Fgroup</a></li>
+<li><a href="#fkeys">Fkeys</a></li>
+<li><a href="#column">Column</a></li>
+<li><a href="#columns">Columns</a></li>
+<li><a href="#diamond">Diamond</a></li>
+<li><a href="#thumb-cluster">Thumb cluster</a></li>
+<li><a href="#hand">Hand</a></li>
+<li><a href="#led">LED</a></li>
+<li><a href="#leds">LEDs</a></li>
+<li><a href="#case-screw">Case screw</a></li>
+<li><a href="#palm-support">Palm support</a></li>
+<li><a href="#main-drawing">Main drawing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="layers">Layers</h3>
+<h4 id="0">0</h4>
+<p>The default layer.
+Inserts of blocks go here.</p>
+<h4 id="bottom-spacer-plate-and-frame">Bottom, Spacer, Plate, and Frame</h4>
+<p>Contours that are unique to the named part.</p>
+<h4 id="case-upper">Case upper</h4>
+<p>Contours common to the mounting plate and frame.</p>
+<h4 id="case-lower">Case lower</h4>
+<p>Contours common to the bottom plate and spacer.</p>
+<h4 id="case">Case</h4>
+<p>Common contours of all details.</p>
+<h4 id="keycaps">Keycaps</h4>
+<p>Rectangles for each keycap,
+to aid the construction of cutouts in the top frame.</p>
+<h4 id="palm-supports">Palm supports</h4>
+<p>Schematics of the palm supports,
+to aid in placing the attachment holes.</p>
+<h4 id="construction">Construction: *</h4>
+<p>Several layers with auxiliary construction lines
+which explain how features are placed.</p>
+<h4 id="labels">Labels</h4>
+<p>Sizes, distances, offsets, and rounding radii.</p>
+<h3 id="blocks">Blocks</h3>
+<h4 id="keyswitch-cutout">Keyswitch cutout</h4>
+<p>A cutout for one keyswitch.
+Change this if you plan to build a Cherry MX-based board.</p>
+<h4 id="key">Key</h4>
+<p>A <a href="#keyswitch-cutout">keyswitch cutout</a>
+and a single 1-unit keycap (19×19 mm).</p>
+<h4 id="frame-key">Frame Key</h4>
+<p>A frame cutout for a single 1-unit <a href="#key">key</a>.</p>
+<h4 id="key-15">Key 1.5</h4>
+<p>A <a href="#keyswitch-cutout">keyswitch cutout</a>
+and a 1.5-unit keycap,
+for the thumb base keys.</p>
+<h4 id="frame-key-15">Frame Key 1.5</h4>
+<p>A frame cutout for a single <a href="#key-1.5">1.5-unit key</a>.</p>
+<h4 id="frame-fgroup">Frame Fgroup</h4>
+<p>A frame cutout for a horizontal row of four keys.</p>
+<h4 id="fgroup">Fgroup</h4>
+<p>Four <a href="#key">key</a>s in a horizontal row,
+with a <a href="#frame-fgroup">frame cutout</a>,
+for function keys.</p>
+<h4 id="fkeys">Fkeys</h4>
+<p>Three <a href="#fgroup">Fgroup</a>s,
+plus two single <a href="#key">key</a>s on the sides
+with corresponding <a href="#frame-key">frame cutout</a>s.</p>
+<h4 id="column">Column</h4>
+<p>Four <a href="#key">key</a>s in a vertical column,
+grouped so that you could easily adjust column staggering
+in the <a href="#hand">Hand</a> block.</p>
+<h4 id="columns">Columns</h4>
+<p>Eight <a href="#column">column</a>s
+arranged according to column stagger.</p>
+<p>If you ever need to adjust the column staggering pattern,
+this is the place to do it.
+It will be mirrored symmetrically.</p>
+<h4 id="diamond">Diamond</h4>
+<p>Four <a href="#key">key</a>s in a diamond shape,
+for navigation clusters.</p>
+<h4 id="thumb-cluster">Thumb cluster</h4>
+<p>Three 1-unit <a href="#key">key</a>s
+and a single <a href="#key-1.5">1.5-unit key</a>
+with a frame cutout,
+for thumb clusters.</p>
+<h4 id="hand">Hand</h4>
+<p>Combines the <a href="#columns">columns</a>,
+a navigation cluster <a href="#diamond">diamond</a>,
+and a <a href="#thumb-cluster">thumb cluster</a>.</p>
+<h4 id="led">LED</h4>
+<p>A 3 mm hole for a single LED.</p>
+<p>If you use an opaque material for the top frame,
+move the hole from the <em>Plate</em> layer
+to the <em>Case upper</em> layer.</p>
+<h4 id="leds">LEDs</h4>
+<p>Three <a href="#led">LED</a> blocks in a vertical column.</p>
+<p>The default LED spacing
+is one unit (19 mm).</p>
+<h4 id="case-screw">Case screw</h4>
+<p>A hole for an M3 bolt through all layers.</p>
+<h4 id="palm-support">Palm support</h4>
+<ul>
+<li><em>Palm supports</em> layer:
+  A schematic of the palm support.</li>
+<li><em>Bottom</em> layer:
+  Two holes for M6 bolts,
+  coinciding with the mounting holes
+  on the palm support base.</li>
+<li><em>Spacer</em> layer:
+  Cutouts for two hexagonal M6 nuts.</li>
+</ul>
+<h4 id="main-drawing">Main drawing</h4>
+<p>Combines the major blocks into a whole:</p>
+<ul>
+<li><a href="#fkeys">Function key bar</a></li>
+<li>Two symmetrical <a href="#hand">hand</a> blocks,
+  each rotated about the origin
+  by half the split angle</li>
+<li><a href="#leds">LEDs</a></li>
+<li><a href="#case-screw">Case screw</a> holes</li>
+<li><a href="#palm-rest">Palm rest</a> attachment holes</li>
+</ul>
+<p>This is also where all the manually constructed contours go:</p>
+<ul>
+<li>Frame cutout for the main block</li>
+<li>Exterior boundary</li>
+<li>Spacer cutout</li>
+</ul>
+<p>Unfortunately, it’s not easy to automate these.
+If you change the matrix,
+you will have to re-construct them.
+Open a copy of the original drawing alongside
+and follow the hints in the <em>Construction</em> layers.</p>
+  </div><!-- /.entry-content -->
+</section>
+</body>
+</html>
