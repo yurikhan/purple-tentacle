@@ -1,0 +1,320 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title "Purple Tentacle Keyboard"
+Date "2016-11-04"
+Rev "1"
+Comp ""
+Comment1 "Controller connection"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1300 1450 1850 2850
+U 581F4B62
+F0 "Left" 60
+F1 "left.sch" 60
+F2 "Col39" O R 3150 1550 60 
+F3 "Col05" O R 3150 1700 60 
+F4 "Col04" O R 3150 1850 60 
+F5 "Col03" O R 3150 2000 60 
+F6 "Col02" O R 3150 2150 60 
+F7 "Col01" O R 3150 2300 60 
+F8 "Col00" O R 3150 2450 60 
+F9 "Col99" O R 3150 2600 60 
+F10 "RowKL" I R 3150 2900 60 
+F11 "RowEL" I R 3150 3050 60 
+F12 "RowDL" I R 3150 3200 60 
+F13 "RowCL" I R 3150 3350 60 
+F14 "RowBL" I R 3150 3500 60 
+F15 "RowAZL" I R 3150 3650 60 
+$EndSheet
+$Sheet
+S 6650 1450 1850 2850
+U 581F4B67
+F0 "Right" 60
+F1 "right.sch" 60
+F2 "Col12" O L 6650 1550 60 
+F3 "Col11" O L 6650 1700 60 
+F4 "Col10" O L 6650 1850 60 
+F5 "Col09" O L 6650 2000 60 
+F6 "Col08" O L 6650 2150 60 
+F7 "Col07" O L 6650 2300 60 
+F8 "Col06" O L 6650 2450 60 
+F9 "Col41" O L 6650 2600 60 
+F10 "RowKR" I L 6650 2900 60 
+F11 "RowER" I L 6650 3050 60 
+F12 "RowDR" I L 6650 3200 60 
+F13 "RowCR" I L 6650 3350 60 
+F14 "RowBR" I L 6650 3500 60 
+F15 "RowAZR" I L 6650 3650 60 
+$EndSheet
+$Comp
+L LED DB40
+U 1 1 5821C864
+P 4700 5200
+F 0 "DB40" H 4700 5300 50  0000 C CNN
+F 1 "LED" H 4700 5100 50  0000 C CNN
+F 2 "" H 4700 5200 50  0000 C CNN
+F 3 "" H 4700 5200 50  0000 C CNN
+	1    4700 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED DA40
+U 1 1 5821C933
+P 4700 5500
+F 0 "DA40" H 4700 5600 50  0000 C CNN
+F 1 "LED" H 4700 5400 50  0000 C CNN
+F 2 "" H 4700 5500 50  0000 C CNN
+F 3 "" H 4700 5500 50  0000 C CNN
+	1    4700 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED DZ40
+U 1 1 5821CA06
+P 4700 5800
+F 0 "DZ40" H 4700 5900 50  0000 C CNN
+F 1 "LED" H 4700 5700 50  0000 C CNN
+F 2 "" H 4700 5800 50  0000 C CNN
+F 3 "" H 4700 5800 50  0000 C CNN
+	1    4700 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L R RB40
+U 1 1 5821CAD7
+P 5050 5200
+F 0 "RB40" V 5130 5200 50  0000 C CNN
+F 1 "R" V 5050 5200 50  0000 C CNN
+F 2 "" V 4980 5200 50  0000 C CNN
+F 3 "" H 5050 5200 50  0000 C CNN
+	1    5050 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L R RA40
+U 1 1 5821CBBC
+P 5050 5500
+F 0 "RA40" V 5130 5500 50  0000 C CNN
+F 1 "R" V 5050 5500 50  0000 C CNN
+F 2 "" V 4980 5500 50  0000 C CNN
+F 3 "" H 5050 5500 50  0000 C CNN
+	1    5050 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L R RZ40
+U 1 1 5821CC81
+P 5050 5800
+F 0 "RZ40" V 5130 5800 50  0000 C CNN
+F 1 "R" V 5050 5800 50  0000 C CNN
+F 2 "" V 4980 5800 50  0000 C CNN
+F 3 "" H 5050 5800 50  0000 C CNN
+	1    5050 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Freaduino_Micro U1
+U 1 1 58319FA4
+P 5000 3550
+F 0 "U1" H 5000 4500 60  0000 C CNN
+F 1 "Arduino_Micro" H 5000 2500 60  0000 C CNN
+F 2 "" H 5100 2500 60  0000 C CNN
+F 3 "" H 5100 2500 60  0000 C CNN
+	1    5000 3550
+	0    1    -1   0   
+$EndComp
+NoConn ~ 5650 4350
+Wire Wire Line
+	3150 1550 6650 1550
+Wire Wire Line
+	3150 1700 6650 1700
+Wire Wire Line
+	3150 2000 6650 2000
+Wire Wire Line
+	3150 2150 6650 2150
+Wire Wire Line
+	3150 2300 6650 2300
+Wire Wire Line
+	3150 2450 6650 2450
+Wire Wire Line
+	3150 2900 3750 2900
+Wire Wire Line
+	3750 2900 3750 4350
+Wire Wire Line
+	3150 3050 3650 3050
+Wire Wire Line
+	3650 3050 3650 4450
+Wire Wire Line
+	3550 4550 3550 3200
+Wire Wire Line
+	3550 3200 3150 3200
+Wire Wire Line
+	3150 3350 3450 3350
+Wire Wire Line
+	3450 3350 3450 4650
+Wire Wire Line
+	3350 3500 3150 3500
+Wire Wire Line
+	3150 3650 3250 3650
+Wire Wire Line
+	3250 3650 3250 4850
+Wire Wire Line
+	5250 4350 5250 5800
+Wire Wire Line
+	4500 5800 3850 5800
+Wire Wire Line
+	4350 5200 4500 5200
+Wire Wire Line
+	4250 5500 4500 5500
+Wire Wire Line
+	3150 2600 6650 2600
+Wire Wire Line
+	3450 4650 4650 4650
+Wire Wire Line
+	3350 4750 4750 4750
+Wire Wire Line
+	3350 3500 3350 4750
+Wire Wire Line
+	3250 4850 4850 4850
+Wire Wire Line
+	6650 2900 6050 2900
+Wire Wire Line
+	6050 2900 6050 4350
+Wire Wire Line
+	6650 3050 6150 3050
+Wire Wire Line
+	6150 3050 6150 4450
+Wire Wire Line
+	6650 3200 6250 3200
+Wire Wire Line
+	6250 3200 6250 4550
+Wire Wire Line
+	6250 4550 5450 4550
+Wire Wire Line
+	6650 3350 6350 3350
+Wire Wire Line
+	6350 3350 6350 4650
+Wire Wire Line
+	6650 3500 6450 3500
+Wire Wire Line
+	6450 3500 6450 4750
+Wire Wire Line
+	6450 4750 5050 4750
+Wire Wire Line
+	6650 3650 6550 3650
+Wire Wire Line
+	6550 3650 6550 4850
+Wire Wire Line
+	6550 4850 4950 4850
+Wire Wire Line
+	5250 5800 5200 5800
+Wire Wire Line
+	5200 5500 5250 5500
+Connection ~ 5250 5500
+Wire Wire Line
+	5200 5200 5250 5200
+Connection ~ 5250 5200
+Wire Wire Line
+	4350 5200 4350 4350
+Wire Wire Line
+	4250 5500 4250 4350
+Wire Wire Line
+	5750 2150 5750 2750
+Wire Wire Line
+	3150 1850 6650 1850
+Wire Wire Line
+	6050 4350 5750 4350
+Wire Wire Line
+	6150 4450 5550 4450
+Wire Wire Line
+	5550 4450 5550 4350
+Wire Wire Line
+	5450 4550 5450 4350
+Wire Wire Line
+	5050 4750 5050 4350
+Wire Wire Line
+	4950 4850 4950 4350
+Wire Wire Line
+	4850 4850 4850 4350
+Wire Wire Line
+	4750 4750 4750 4350
+Wire Wire Line
+	4650 4650 4650 4350
+Wire Wire Line
+	3550 4550 4550 4550
+Wire Wire Line
+	4550 4550 4550 4350
+Wire Wire Line
+	3650 4450 4450 4450
+Wire Wire Line
+	4450 4450 4450 4350
+Wire Wire Line
+	3750 4350 4150 4350
+Wire Wire Line
+	6350 4650 5150 4650
+Wire Wire Line
+	5150 4650 5150 4350
+Wire Wire Line
+	3850 5800 3850 2750
+Wire Wire Line
+	3850 2750 4150 2750
+Wire Wire Line
+	4650 1700 4650 2750
+Wire Wire Line
+	4750 1550 4750 2750
+Wire Wire Line
+	4950 2750 4950 2450
+Wire Wire Line
+	5650 2300 5650 2750
+Connection ~ 4450 2000
+Connection ~ 4550 1850
+Wire Wire Line
+	4550 1850 4550 2750
+Wire Wire Line
+	4450 2750 4450 2000
+Connection ~ 4650 1700
+Connection ~ 4750 1550
+Connection ~ 4850 2600
+Wire Wire Line
+	4850 2750 4850 2600
+Connection ~ 4950 2450
+Connection ~ 5650 2300
+Connection ~ 5750 2150
+$EndSCHEMATC
