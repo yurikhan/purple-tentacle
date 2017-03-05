@@ -87,3 +87,13 @@ img { max-width: 100%; }
 *::-moz-selection { background-color: Highlight; color: HighlightText; }
 
 sup[id^='fnref:']+sup[id^='fnref:']::before { content: ',' }
+
+.toc { font-size: smaller }
+
+figure { display: inline-block; width: 49%; margin: 0.5em 0px }
+figure p { margin: 0px }
+figure a:link, figure a:visited { border-bottom: none }
+figcaption { font-size: smaller; text-align: center }
+
+a:link img { box-shadow: 0 0 0.25em }
+a:link:hover img, a:link:active img { box-shadow: 0 0 0.5em }
